@@ -52,16 +52,7 @@ services:
     networks:
       - veera11-net
 
-  view_offer:
-    build: ./View_offer
-    container_name: veera11-view-offer
-    ports:
-      - "8108:80"
-    depends_on:
-      - backend
-    networks:
-      - veera11-net
-
+  
 volumes:
   db_data:
 
