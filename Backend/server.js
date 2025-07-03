@@ -91,7 +91,7 @@ app.post('/api/applications', upload.fields([
         };
 
         // Handle file uploads with full URL
-        const baseUrl = `http://13.60.173.13:${port}/uploads/`;
+        const baseUrl = `http://16.171.226.8:${port}/uploads/`;
         if (files.resume) {
             formData.documents.resume = {
                 name: files.resume[0].originalname,
@@ -218,5 +218,5 @@ app.patch('/api/applications/:id', async (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running on http://13.60.173.13:${port}`);
+    console.log(`Server running on http://16.171.226.8:${port}`);
 });
